@@ -1,7 +1,7 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Home, CockDetails } from "./Pages";
-import { Header } from "./component";
+import { Footer, Header } from "./component";
 function App() {
   return (
     <div className="App">
@@ -9,7 +9,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cockdetail/:id" element={<CockDetails />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

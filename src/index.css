@@ -311,6 +311,21 @@ body {
   text-transform: capitalize;
 }
 
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
 @media screen and (max-width: 1184px) {
   .cocktail-list-container {
     grid-template-columns: repeat(3, 1fr);
@@ -372,6 +387,18 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .about-secrete {
+    font-size: 22px;
+  }
+
+  .detail-name h2 {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 569px) {
@@ -399,5 +426,17 @@ body {
   .search-input {
     height: 30px;
     font-size: 15px;
+  }
+
+  .about-secrete {
+    font-size: 20px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .detail-name h2 {
+    font-size: 16px;
   }
 }
